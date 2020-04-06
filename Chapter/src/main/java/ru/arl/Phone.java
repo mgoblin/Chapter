@@ -19,8 +19,8 @@ public class Phone {
         new Phone ("нет","нет",0);
     }
 
-    public void receiveCall(name, number) {
-        String name = "Вам звонит " + name + number;
+    public void receiveCall(String name) {
+        String name = "Вам звонит " + name;
     }
 
     //Геттеры и Сеттеры
