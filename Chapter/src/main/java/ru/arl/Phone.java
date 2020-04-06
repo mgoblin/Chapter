@@ -1,14 +1,12 @@
 package ru.arl;
 
-import java.sql.SQLOutput;
-
 public class Phone {
     private String number;
     private String model;
-    private String weight;
+    private int weight;
 
 
-    public Phone(String n, String m, String w) {
+    public Phone(String n, String m, int w) {
         number = n;
         model = m;
         weight = w;
@@ -18,7 +16,11 @@ public class Phone {
         model = m1;
     }
     public Phone() {
-        new Phone ("нет","нет","нет");
+        new Phone ("нет","нет",0);
+    }
+
+    public void receiveCall() {
+        String name = "Вам звонит"+number;
     }
 
     //Геттеры и Сеттеры
@@ -39,11 +41,11 @@ public class Phone {
         this.model = model;
     }
 
-    public String getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
@@ -60,15 +62,15 @@ public class Phone {
     //Условие задачи
 
     public static void main(String[] args) {
-        Phone Iphone = new Phone("+79261248598","Pro Max 11","188 г");
-        Phone Samsung = new Phone("+79253208988","S20 Ultra","220 г");
-        Phone Xiomi = new Phone("+79207403578","Mi Note 11","208 г");
-        Phone NoPhone = new Phone();
+        Phone iphone = new Phone("+79261248598","Pro Max 11",188);
+        Phone samsung = new Phone("+79253208988","S20 Ultra",220);
+        Phone xiaomi = new Phone("+79207403578","Mi Note 11",208);
+        Phone noPhone = new Phone();
 
-        System.out.println(Iphone);
-        System.out.println(Samsung);
-        System.out.println(Xiomi);
-        System.out.println(NoPhone);
+        System.out.println(iphone);
+        System.out.println(samsung);
+        System.out.println(xiaomi);
+        System.out.println(noPhone);
     }
 }
 
