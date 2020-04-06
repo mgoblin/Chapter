@@ -7,10 +7,10 @@ public class Phone {
 
 
     public Phone(String n, String m, int w) {
-        number = n;
-        model = m;
-        weight = w;
+        new Phone(n,m);
+        weight=w;
     }
+
     public Phone(String n1, String m1) {
         number = n1;
         model = m1;
