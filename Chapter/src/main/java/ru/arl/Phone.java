@@ -68,7 +68,7 @@ public class Phone {
         Phone noPhone = new Phone();
 
         Phone nokia = new Phone("+79264312345","3310");
-
+//1
         iphone.receiveCall("Дядя Миша");
         iphone.getNumber();
 
