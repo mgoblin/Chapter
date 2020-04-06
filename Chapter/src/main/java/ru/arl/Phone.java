@@ -67,6 +67,9 @@ public class Phone {
         Phone xiaomi = new Phone("+79207403578","Mi Note 11",208);
         Phone noPhone = new Phone();
 
+        iphone.receiveCall("Дядя Миша");
+        iphone.getNumber();
+
         System.out.println(iphone);
         System.out.println(samsung);
         System.out.println(xiaomi);
