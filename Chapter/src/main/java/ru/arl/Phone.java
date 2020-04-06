@@ -55,7 +55,7 @@ public class Phone {
                 "number='" + number + '\'' +
                 ", model='" + model + '\'' +
                 ", weight='" + weight + '\'' +
-                '}' + '\n' + "Вам звонит" + number;
+                '}';
 
     }
 
@@ -66,6 +66,8 @@ public class Phone {
         Phone samsung = new Phone("+79253208988","S20 Ultra",220);
         Phone xiaomi = new Phone("+79207403578","Mi Note 11",208);
         Phone noPhone = new Phone();
+
+        Phone nokia = new Phone("+79264312345","3310");
 
         iphone.receiveCall("Дядя Миша");
         iphone.getNumber();
