@@ -20,8 +20,7 @@ public class Phone {
     }
 
     public void receiveCall(String name) {
-        String name = "Вам звонит " + name;
-        System.out.println("Звонит {name} ".getnumber);
+        System.out.println("Звонит"+ name +number);
     }
 
     //Геттеры и Сеттеры
