@@ -41,6 +41,8 @@ public class Person {
         ruben.move();
 
         Person nekto = new Person();
+        nekto.move();
+        nekto.talk();
 
 
     }
