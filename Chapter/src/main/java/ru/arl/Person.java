@@ -29,7 +29,7 @@ public class Person {
         System.out.println("Такой-то "+fullName+" двигается");
     }
     public Person(String fullName,int age) {
-        fullName = fullName;
+        this.fullName = fullName;
     }
     public Person() {
     }
