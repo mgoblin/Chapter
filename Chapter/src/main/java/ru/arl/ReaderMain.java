@@ -3,15 +3,15 @@ package ru.arl;
 public class ReaderMain {
     public static void main(Reader[] args) {
 
-        Reader[] book = new Reader[3];
-        book[0] = "Энциклопедия";
-        book[1] = "Приключения";
-        book[2] = "Словарь";
+        Reader[] readers = new Reader[3];
+        readers[0] = "Энциклопедия";
+        readers[1] = "Приключения";
+        readers[2] = "Словарь";
 
-        int sumBook = book.length;
+        int sumBook = readers.length;
         System.out.println(sumBook);
 
         System.out.println("Петров В.В. взял "+sumBook+" книг");
-        System.out.println("Петров В.В. взял "+book[0]+" ,"+book[1]+" ,"+book[2]);
+        System.out.println("Петров В.В. взял "+readers[0]+" ,"+readers[1]+" ,"+readers[2]);
     }
 }
