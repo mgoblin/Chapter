@@ -20,23 +20,24 @@ public class Person {
         this.age = age;
     }
 
-    public void talk(String fullName)
+    public void talk()
     {
-        System.out.println("Такой-то "+getFullName()+" говорит");
+        System.out.println("Такой-то "+fullName+" говорит");
     }
-    public void move(String fullName)
+    public void move()
     {
-        System.out.println("Такой-то "+getFullName()+" двигается");
+        System.out.println("Такой-то "+fullName+" двигается");
     }
     public Person(String fullName,int age) {
+        fullName = fullName;
     }
     public Person() {
     }
 
     public static void main(String[] args) {
         Person ruben = new Person("Ruben",21);
-        ruben.talk("Рубен");
-        ruben.move("Рубен");
+        ruben.talk();
+        ruben.move();
 
         Person nekto = new Person();
 
