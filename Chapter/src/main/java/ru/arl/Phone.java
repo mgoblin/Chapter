@@ -8,6 +8,8 @@ public class Phone {
 
     public Phone(String n, String m, int w) {
         new Phone(n,m);
+        model = m;
+        number = n;
         weight=w;
     }
 
@@ -19,9 +21,7 @@ public class Phone {
         new Phone ("нет","нет",0);
     }
 
-    public void receiveCall(String name) {
-        System.out.println("Звонит " + name);
-    }
+    public void receiveCall(String name,String num) {System.out.println("Звонит " + name + num);}
 
     //Геттеры и Сеттеры
 
@@ -69,7 +69,7 @@ public class Phone {
 
         Phone nokia = new Phone("+79264312345","3310");
 //1
-        iphone.receiveCall("Дядя Миша");
+        iphone.receiveCall("Дядя Миша ", "+79261248598");
         iphone.getNumber();
 
         System.out.println(iphone);
