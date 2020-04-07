@@ -9,6 +9,13 @@ public class Reader {
     private Date birthDate;
     private String telephoneNum;
 
+    public Reader(String fullName, String numOfReadTicket, String faculty, Date birthDate, String telephoneNum) {
+        this.fullName = fullName;
+        this.numOfReadTicket = numOfReadTicket;
+        this.faculty = faculty;
+        this.birthDate = birthDate;
+        this.telephoneNum = telephoneNum;
+    }
 
     public String getfIO() {
         return fullName;
@@ -49,6 +56,7 @@ public class Reader {
     public void setTelephoneNum(String telephoneNum) {
         this.telephoneNum = telephoneNum;
     }
+
 
     public void returnBook(){}
     public void takeBook(){}
