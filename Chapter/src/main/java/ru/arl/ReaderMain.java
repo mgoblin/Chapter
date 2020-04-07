@@ -1,9 +1,9 @@
 package ru.arl;
 
 public class ReaderMain {
-    public static void main(String[] args) {
+    public static void main(Reader[] args) {
 
-        String[] book = new String[3];
+        Reader[] book = new Reader[3];
         book[0] = "Энциклопедия";
         book[1] = "Приключения";
         book[2] = "Словарь";
