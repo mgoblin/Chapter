@@ -1,28 +1,21 @@
 package ru.arl;
 
+import java.util.Date;
+
 public class Reader {
-    private String fIO;
-    private int number;
+    private String fullName;
     private String numOfReadTicket;
     private String faculty;
-    private float birthDate;
+    private Date birthDate;
     private String telephoneNum;
 
 
     public String getfIO() {
-        return fIO;
+        return fullName;
     }
 
-    public void setfIO(String fIO) {
-        this.fIO = fIO;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+    public void setfIO(String fullName) {
+        this.fullName = faculty;
     }
 
     public String getNumOfReadTicket() {
@@ -41,11 +34,11 @@ public class Reader {
         this.faculty = faculty;
     }
 
-    public float getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(float birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
