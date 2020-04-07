@@ -1,12 +1,14 @@
 package ru.arl;
 
+import java.util.Date;
+
 public class ReaderMain {
     public static void main(Reader[] args) {
 
         Reader[] readers = new Reader[3];
-        readers[0] = new Reader();
-        readers[1] = new Reader();
-        readers[2] = new Reader();
+        readers[0] = new Reader("Иванов Н.М.","1", "АРхфак",new Date(),"+79251248598" );
+        readers[1] = new Reader("Петров Н.М.","1", "АРхфак",new Date(),"+79251248598");
+        readers[2] = new Reader("Сидоров Н.М.","1", "АРхфак",new Date(),"+79251248598");
 
         int sumBook = readers.length;
         System.out.println(sumBook);
