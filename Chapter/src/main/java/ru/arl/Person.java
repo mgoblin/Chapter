@@ -1,8 +1,8 @@
 package ru.arl;
 
 public class Person {
-    private String fullName;
-    private int age;
+    private String fullName = "Кто-то";
+    private int age = 0;
 
     public String getFullName() {
         return fullName;
