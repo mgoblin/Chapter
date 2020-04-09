@@ -5,7 +5,7 @@ public class Matrix {
     private int columnCount = 2;
     private int rowCount = 2;
 
-    private int[][] matrix = new int[2][2];
+    private int[][] matrix = new int[rowCount][columnCount];
 
 
     public static void main(String[] args) {
