@@ -2,14 +2,26 @@ package ru.arl;
 
 public class Matrix {
     
-    private int columnCount = 2;
-    private int rowCount = 2;
+    private int columnCount;
+    private int rowCount;
 
     private int[][] matrix = new int[rowCount][columnCount];
 
     public Matrix(int columnCount, int rowCount) {
         this.columnCount = columnCount;
         this.rowCount = rowCount;
+    }
+
+    public void addMatrix(Matrix another) {
+        if (another.columnCount == this.columnCount && another.rowCount == this.rowCount) {
+            for(int column = 0; column < columnCount; column++) {
+                for (int row = 0; row < rowCount; row++) {
+                    this.matrix[row][column] += another.matrix[row][column];
+                }
+            }
+        } else {
+            // Тут сообщить об ошибке
+        }
     }
 
     public static void main(String[] args) {
