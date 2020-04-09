@@ -1,7 +1,7 @@
 package ru.arl;
 
 public class Matrix {
-    
+
     private int columnCount;
     private int rowCount;
 
@@ -14,12 +14,22 @@ public class Matrix {
 
     public void addMatrix(Matrix another) {
         if (another.columnCount == this.columnCount && another.rowCount == this.rowCount) {
-            for(int column = 0; column < columnCount; column++) {
+            for (int column = 0; column < columnCount; column++) {
                 for (int row = 0; row < rowCount; row++) {
                     this.matrix[row][column] = this.matrix[row][column] + another.matrix[row][column];
                 }
             }
         } else {
+            // Тут сообщить об ошибке
+        }
+    }
+
+    public void addMatrix(int multiplier) {
+        for (int column = 0; column < columnCount; column++) {
+            for (int row = 0; row < rowCount; row++) {
+                this.matrix[row][column] = multiplier * this.matrix[row][column];
+            }
+        } else{
             // Тут сообщить об ошибке
         }
     }
@@ -53,7 +63,7 @@ public class Matrix {
 //                    }
 //                    System.out.println();
 //                }
-            }
-        }
+    }
+}
 //    }
 //}
