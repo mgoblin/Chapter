@@ -7,7 +7,6 @@ public class Matrix {
 
     private int[][] matrix = new int[rowCount][columnCount];
 
-
     public static void main(String[] args) {
 //
 //        matrix1[0][0] = 1;
