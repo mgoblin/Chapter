@@ -7,6 +7,11 @@ public class Matrix {
 
     private int[][] matrix = new int[rowCount][columnCount];
 
+    public Matrix(int columnCount, int rowCount) {
+        this.columnCount = columnCount;
+        this.rowCount = rowCount;
+    }
+
     public static void main(String[] args) {
 //
 //        matrix1[0][0] = 1;
