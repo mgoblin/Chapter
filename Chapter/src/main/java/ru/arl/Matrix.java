@@ -2,21 +2,24 @@ package ru.arl;
 
 public class Matrix {
     
-    private static int[][] matrix1 = new int[2][2];
-    private static int[] columns = new int[2];
-    private static int[] rows = new int[2];
+    private int columnCount = 2;
+    private int rowCount = 2;
+
+    private int[][] matrix = new int[2][2];
+
+
     public static void main(String[] args) {
-
-        matrix1[0][0] = 1;
-        matrix1[0][1] = 2;
-        matrix1[1][0] = 3;
-        matrix1[1][1] = 4;
-
-        int[][] matrix2 = new int[2][2];
-        matrix2[0][0] = 4;
-        matrix2[0][1] = 3;
-        matrix2[1][0] = 2;
-        matrix2[1][1] = 1;
+//
+//        matrix1[0][0] = 1;
+//        matrix1[0][1] = 2;
+//        matrix1[1][0] = 3;
+//        matrix1[1][1] = 4;
+//
+//        int[][] matrix2 = new int[2][2];
+//        matrix2[0][0] = 4;
+//        matrix2[0][1] = 3;
+//        matrix2[1][0] = 2;
+//        matrix2[1][1] = 1;
 
 //        for (int a = 0; a < matrix1.length; a++) {
 //            for (int s = 0; s < matrix1[a].length; s++) {
@@ -28,12 +31,12 @@ public class Matrix {
 //                    }
 //                }
 
-                for (int i = 0; i < matrix1.length; i++) {
-                    for (int j = 0; j < matrix1[1].length; j++) {
-                        System.out.print(matrix1[i][j] * 2 + " "); //Умножение матрицы на 2
-                    }
-                    System.out.println();
-                }
+//                for (int i = 0; i < matrix1.length; i++) {
+//                    for (int j = 0; j < matrix1[1].length; j++) {
+//                        System.out.print(matrix1[i][j] * 2 + " "); //Умножение матрицы на 2
+//                    }
+//                    System.out.println();
+//                }
             }
         }
 //    }
