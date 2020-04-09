@@ -16,7 +16,7 @@ public class Matrix {
         if (another.columnCount == this.columnCount && another.rowCount == this.rowCount) {
             for(int column = 0; column < columnCount; column++) {
                 for (int row = 0; row < rowCount; row++) {
-                    this.matrix[row][column] += another.matrix[row][column];
+                    this.matrix[row][column] = this.matrix[row][column] + another.matrix[row][column];
                 }
             }
         } else {
