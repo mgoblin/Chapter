@@ -24,13 +24,11 @@ public class Matrix {
         }
     }
 
-    public void addMatrix(int multiplier) {
+    public void multiplyMatrix(int multiplier) {
         for (int column = 0; column < columnCount; column++) {
             for (int row = 0; row < rowCount; row++) {
                 this.matrix[row][column] = multiplier * this.matrix[row][column];
             }
-        } else{
-            // Тут сообщить об ошибке
         }
     }
 
