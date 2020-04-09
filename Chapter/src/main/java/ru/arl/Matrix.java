@@ -2,10 +2,11 @@ package ru.arl;
 
 public class Matrix {
     
-    private int[][] matrix1 = new int[2][2];
-    
+    private static int[][] matrix1 = new int[2][2];
+    private static int[] columns = new int[2];
+    private static int[] rows = new int[2];
     public static void main(String[] args) {
-        int[][] matrix1 = new int[2][2];
+
         matrix1[0][0] = 1;
         matrix1[0][1] = 2;
         matrix1[1][0] = 3;
