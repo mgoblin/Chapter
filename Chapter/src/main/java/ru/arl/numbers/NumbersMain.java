@@ -6,7 +6,7 @@ public class NumbersMain {
         System.out.println("Печатаем числа");
         if (a <= b) {
             for(int i = a; i <= b; i++) {
-                System.out.println(Math.abs(i));
+                System.out.println(i > 0 ? i : -i);
             }
         } else {
             printNumbers(-a, -b);
