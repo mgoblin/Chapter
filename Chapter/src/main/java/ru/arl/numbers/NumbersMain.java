@@ -3,13 +3,13 @@ package ru.arl.numbers;
 public class NumbersMain {
 
     public void printNumbers(int a, int b) {
-        System.out.println("тут мы будем делать полезное дело");
+        System.out.println("Печатаем числа");
         if (a <= b) {
             for(int i = a; i <= b; i++) {
-                System.out.println(i);
+                System.out.println(Math.abs(i));
             }
         } else {
-            printNumbers(b, a);
+            printNumbers(-a, -b);
         }
     }
 
