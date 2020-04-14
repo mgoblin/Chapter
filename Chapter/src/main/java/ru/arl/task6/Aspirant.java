@@ -52,6 +52,8 @@ public class Aspirant extends Student {
                 2.0,
                 "Влияние зрения на пение и пения и на зрения");
 
+        Student[] ruben1 = new Student[Student raz, Aspirant dva]
+
 
     }
 }
