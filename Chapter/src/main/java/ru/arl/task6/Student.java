@@ -6,11 +6,11 @@ public class Student {
     private String group = "нет";
     private double averageMark = 0;
 
-    public void getScholarship() {
+    public double getScholarship() {
         if (this.averageMark == 5) {
-            System.out.println("Стипендия: 100");
+            return 100;
         } else {
-            System.out.println("Стипендия: 80");
+            return 80;
         }
     }
 
