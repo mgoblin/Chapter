@@ -6,7 +6,7 @@ public class Student {
     private String group = "нет";
     private double averageMark = 0;
 
-    public void getAverageMark(double averageMark) {
+    public void getScholarship() {
         if (this.averageMark == 5) {
             System.out.println("Стипендия: 100");
         } else {

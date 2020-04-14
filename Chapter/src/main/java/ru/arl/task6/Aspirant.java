@@ -17,16 +17,16 @@ public class Aspirant extends Student {
         this.research = research;
     }
 
-    @Override
-    public void getAverageMark(double averageMark) {
-        super.getAverageMark(averageMark);
-        if (averageMark==5){
-            System.out.println("Стипендия: 200");
-        } else {
-            System.out.println("Стпендия: 180");
-        }
-
-    }
+//    @Override
+//    public void getAverageMark() {
+//        super.getScholarship(averageMark);
+//        if (averageMark==5){
+//            System.out.println("Стипендия: 200");
+//        } else {
+//            System.out.println("Стипендия: 180");
+//        }
+//
+//    }
 
     public static void main(String[] args) {
         Student ruben = new Student("Рубен", "Акопян", "5", 5);
