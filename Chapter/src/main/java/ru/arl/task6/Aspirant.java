@@ -40,6 +40,11 @@ public class Aspirant extends Student {
                 "фигня всякая");
         david.getAverageMark();
 
-
+        Student mike = new Aspirant(
+                "Михаил",
+                "Голованов",
+                "группа1",
+                2.0,
+                "Влияние зрения на пение и пения и на зрения");
     }
-} ///
+}
