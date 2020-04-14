@@ -1,7 +1,6 @@
 package com.company.professions;
 
-public class Person {
-    public String fullName;
+public class Person extends Driver {
     public int age;
 
     @Override
