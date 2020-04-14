@@ -52,9 +52,9 @@ public class Aspirant extends Student {
                 2.0,
                 "Влияние зрения на пение и пения и на зрения");
 
-        Student[] ruben1 = new Student[2];
-        ruben1[0]=Student;
-        ruben1[1]=Aspirant;
+        Student[] students = new Student[2];
+        students[0]=ruben;
+        students[1]=david;
 
 
     }
