@@ -4,7 +4,7 @@ public class Student {
     private String firstName = "нет";
     private String lastName = "нет";
     private String group = "нет";
-    private double averageMark = 0;
+    protected double averageMark = 0;
 
     public double getScholarship() {
         if (this.averageMark == 5) {
