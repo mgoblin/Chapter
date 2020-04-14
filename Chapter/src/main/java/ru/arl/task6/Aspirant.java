@@ -5,6 +5,16 @@ public class Aspirant extends Student {
         super(firstName, lastName, group, averageMark);
     }
 
+    private String research = "нет";
+
+    public String getResearch() {
+        return research;
+    }
+
+    public void setResearch(String research) {
+        this.research = research;
+    }
+
     @Override
     public void getAverageMark(double averageMark) {
         super.getAverageMark(averageMark);
