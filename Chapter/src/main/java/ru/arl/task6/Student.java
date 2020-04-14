@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task6;
 
 public class Student {
     private String firstName = "нет";
