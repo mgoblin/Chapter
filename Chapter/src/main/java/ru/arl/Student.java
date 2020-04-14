@@ -53,4 +53,4 @@ public class Student {
     public void setAverageMark(double averageMark) {
         this.averageMark = averageMark;
     }
-}
+} //
