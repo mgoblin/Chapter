@@ -9,6 +9,8 @@ public class Driver {
         this.fullName = fullName;
     }
 
+    public Driver() {}
+
     @Override
     public String toString() {
         return "Driver{" +
