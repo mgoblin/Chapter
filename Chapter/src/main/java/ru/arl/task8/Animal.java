@@ -1,8 +1,8 @@
 package ru.arl.task8;
 
 public class Animal {
-    protected String food;
-    protected String location;
+    private String food;
+    private String location;
 
     public Animal(String food, String location) {
         this.food = food;
