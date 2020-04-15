@@ -35,4 +35,7 @@ public class Car {
         System.out.println(marka +' '+ carClass +' '+ engine +' '+ driver +' '+ weight);
     }
 
+    public static void main(String[] args) {
+        Car ruben = new Car();
+    }
 }
