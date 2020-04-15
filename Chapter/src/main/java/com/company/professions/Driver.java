@@ -1,6 +1,6 @@
 package com.company.professions;
 
-public class Driver {
+public class Driver extends Person {
     public int experience;
     public String fullName;
 
