@@ -28,13 +28,13 @@ public class Animal {
     }
 
     public void makeNoise() {
-        System.out.println(" говорит");
+        System.out.println("Животное говорит");
     }
     public void eat() {
-        System.out.println(" ест");
+        System.out.println("Животное ест");
     }
     public void sleep() {
-        System.out.println(" спит");
+        System.out.println("Животное спит");
     }
 
 }
