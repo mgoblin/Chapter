@@ -12,8 +12,10 @@ public class Vet{
         animal[1]=new Dog("Собач.корм","На выставке",4,1);
         animal[2]=new Horse("Сено","Хлев","Серая, длинная",4,1);
 
+        Vet vet = new Vet();
+
         for (int i=0; i<animal.length; i++){
-            animal[i].treatAnimal;
+            vet.treatAnimal(animal[i]);
         }
 
     }
