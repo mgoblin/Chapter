@@ -10,8 +10,6 @@ public class Car {
     public Driver driver;
     public int weight;
 
-    public Car() {}
-
     public Car(String marka, String carClass, Engine engine, Driver driver, int weight) {
         this.marka = marka;
         this.carClass = carClass;
