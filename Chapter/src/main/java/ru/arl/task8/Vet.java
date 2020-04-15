@@ -2,7 +2,7 @@ package ru.arl.task8;
 
 public class Vet{
     public void treatAnimal(Animal animal) {
-        System.out.println(food +' '+ location);
+        System.out.println(animal.getFood() +' '+animal.getLocation());
     }
 
 
