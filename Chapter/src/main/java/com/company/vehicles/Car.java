@@ -36,6 +36,7 @@ public class Car {
     }
 
     public static void main(String[] args) {
-        Car ruben = new Car();
+        Car ruben = new Car("хуедай","легковушка",new Engine(200,"хуендай"),new Driver(18),3000);
+        ruben.printInfo();
     }
 }
