@@ -1,6 +1,6 @@
 package com.company.vehicles;
 
-public class SportCar {
+public class SportCar extends Car {
     public double speed;
 
     @Override

@@ -1,6 +1,6 @@
 package com.company.vehicles;
 
-public class Lorry {
+public class Lorry extends Car {
     public int carrying;
 
     @Override

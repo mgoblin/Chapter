@@ -5,6 +5,7 @@ public class Vet{
         System.out.println(food +' '+ location);
     }
 
+
     public static void main(String[] args) {
         Animal[] animal = new Animal[3];
         animal[0]=new Cat("Кош.корм","Дома",4,1);
@@ -14,5 +15,6 @@ public class Vet{
         for (int i=0; i<animal.length; i++){
             animal[i].treatAnimal;
         }
+
     }
 }
