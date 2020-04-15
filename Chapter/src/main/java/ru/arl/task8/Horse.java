@@ -11,7 +11,7 @@ public class Horse extends Animal {
     }
 
     @Override
-    public void sleep() {
+    public void makeNoise() {
         System.out.println("Лошадь спит");
     }
 
