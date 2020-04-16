@@ -37,7 +37,10 @@ public abstract class Shape {
 
         boolean eq = circle1 == circle2;
         boolean eq2 = circle2 == circle3;
+
+        boolean equals = circle1.equals(circle2);
         System.out.println(eq);
         System.out.println(eq2);
+        System.out.println(equals);
     }
 }
