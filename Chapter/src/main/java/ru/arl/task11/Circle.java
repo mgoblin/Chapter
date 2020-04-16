@@ -28,6 +28,23 @@ public class Circle extends Shape {
 
     public void draw() {
         System.out.println("Рисуется круг");
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Circle circle = (Circle) o;
+
+        if (x != circle.x) return false;
+        return y == circle.y;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = x;
+        result = 31 * result + y;
+        return result;
     }
 }
