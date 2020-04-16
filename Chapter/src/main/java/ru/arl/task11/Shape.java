@@ -21,7 +21,7 @@ public abstract class Shape {
         figures[0]=new Circle("Белый",10,10);
         figures[1]=new Rectangle("Черный",1,2);
 
-        for (int i=1; i<figures.length; i++){
+        for (int i=0; i<figures.length; i++){
             figures[i].draw();
         }
     }
