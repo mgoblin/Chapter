@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task3;
 
 public class Matrix {
 

@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task1;
 
 public class Phone {
     private String number;

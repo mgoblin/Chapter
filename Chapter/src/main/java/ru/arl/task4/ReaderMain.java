@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task4;
 
 import java.util.Date;
 

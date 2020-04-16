@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task2;
 
 public class Person {
     private String fullName = "Кто-то";

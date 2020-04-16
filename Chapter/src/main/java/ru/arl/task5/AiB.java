@@ -1,4 +1,4 @@
-package ru.arl;
+package ru.arl.task5;
 
 public class AiB {
     int a;
