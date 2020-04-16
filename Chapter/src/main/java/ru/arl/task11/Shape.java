@@ -33,8 +33,11 @@ public abstract class Shape {
 
         Circle circle1 = new Circle("Белый", 10, 10);
         Circle circle2 = new Circle("Белый", 10, 10);
+        Circle circle3 = new Circle("Белый", 10, 10);
 
         boolean eq = circle1 == circle2;
+        boolean eq2 = circle2 == circle3;
         System.out.println(eq);
+        System.out.println(eq2);
     }
 }
