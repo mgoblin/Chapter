@@ -31,6 +31,10 @@ public abstract class Shape {
                 new Star("Яркая")
         };
 
-        drawShapes(figures);
+        Circle circle1 = new Circle("Белый", 10, 10);
+        Circle circle2 = new Circle("Белый", 10, 10);
+
+        boolean eq = circle1 == circle2;
+        System.out.println(eq);
     }
 }
