@@ -1,4 +1,4 @@
-package ru.arl.task10;
+package ru.arl.task11;
 
 public abstract class Shape {
     private String colour;

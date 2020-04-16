@@ -1,4 +1,4 @@
-package ru.arl.task11;
+package ru.arl.task12;
 
 public class Product {
     private String name="default";
