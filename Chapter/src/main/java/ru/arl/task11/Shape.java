@@ -21,10 +21,12 @@ public abstract class Shape {
             shape.draw();
         }
     }
+
     public static void main(String[] args) {
-        Shape[] figures= new Shape[2];
+        Shape[] figures= new Shape[3];
         figures[0]=new Circle("Белый",10,10);
         figures[1]=new Rectangle("Черный",1,2);
+        figures[2] = new Triangle("Синий", 1);
 
         drawShapes(figures);
     }
