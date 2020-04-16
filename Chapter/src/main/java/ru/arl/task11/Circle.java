@@ -26,7 +26,6 @@ public class Circle extends Shape {
         this.y=y;
     }
 
-    @Override
     public void draw() {
         System.out.println("Рисуется круг");
 

@@ -24,5 +24,8 @@ public abstract class Shape {
         for (int i=0; i<figures.length; i++){
             figures[i].draw();
         }
+
+        Shape shape = new Circle("Red", 20, 14);
+        shape.draw();
     }
 }
