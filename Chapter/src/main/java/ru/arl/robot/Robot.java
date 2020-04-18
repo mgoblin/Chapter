@@ -10,17 +10,11 @@ public class Robot {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
 
     public int getY() {
         return y;
     }
 
-    public void setY(int y) {
-        this.y = y;
-    }
 
     public Robot(int x, int y, int maxX, int maxY) {
         this.x = x;
