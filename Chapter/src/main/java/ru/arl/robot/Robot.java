@@ -1,8 +1,8 @@
 package ru.arl.robot;
 
 public class Robot {
-    public int x=0;
-    public int y=0;
+    private int x=0;
+    private int y=0;
 
     public Robot(int x, int y) {
         this.x = x;
