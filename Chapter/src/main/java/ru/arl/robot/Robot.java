@@ -25,8 +25,6 @@ public class Robot {
         this.y = y;
     }
 
-    public Robot() {}
-
     public int goUp() {
         x++;
         System.out.println(x+" "+y);
