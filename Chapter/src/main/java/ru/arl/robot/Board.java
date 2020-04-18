@@ -1,26 +1,28 @@
 package ru.arl.robot;
 
 public class Board {
-    private final byte minX = 0, minY = 0;
-    private final byte sizeX, sizeY;
+    private final int minX = 0;
+    private final int minY = 0;
+    private final int sizeX;
+    private final int sizeY;
 
-    public byte getSizeX() {
+    public int getSizeX() {
         return sizeX;
     }
 
-    public byte getSizeY() {
+    public int getSizeY() {
         return sizeY;
     }
 
-    public byte getMinX() {
+    public int getMinX() {
         return minX;
     }
 
-    public byte getMinY() {
+    public int getMinY() {
         return minY;
     }
 
-    public Board(byte sizeX, byte sizeY) {
+    public Board(int sizeX, int sizeY) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
     }
