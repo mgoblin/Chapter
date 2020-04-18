@@ -5,6 +5,7 @@ public class Board {
     private final int minY = 0;
     private final int sizeX;
     private final int sizeY;
+    private final Robot robot();
 
     public int getSizeX() {
         return sizeX;
