@@ -31,6 +31,6 @@ public class Board {
     public Board(int sizeX, int sizeY) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
-        this.robot = new Robot(0, 0);
+        this.robot = new Robot(0, 0, this.sizeX, this.sizeY);
     }
 }
