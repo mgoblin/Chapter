@@ -1,8 +1,8 @@
 package ru.arl.robot;
 
 public class Robot {
-    private int x=0;
-    private int y=0;
+    private int x = 0;
+    private int y = 0;
     private final int maxX;
     private final int maxY;
 
@@ -30,16 +30,27 @@ public class Robot {
     }
 
     public void goUp() {
-        if (y<maxY) {
-            y++; }}
+        if (y < maxY) {
+            y++;
+        }
+    }
+
     public void goDown() {
-        if (y<maxY) {
-        y--; }}
+        if (y < maxY) {
+            y--;
+        }
+    }
+
     public void goLeft() {
-        if (x<maxX) {
-        x--; }}
+        if (x < maxX) {
+            x--;
+        }
+    }
+
     public void goRight() {
-        if(x<maxX){
-        x++; }}
+        if (x < maxX) {
+            x++;
+        }
+    }
 
 }
