@@ -36,13 +36,13 @@ public class Robot {
     }
 
     public void goDown() {
-        if (y < maxY) {
+        if (y > 0) {
             y--;
         }
     }
 
     public void goLeft() {
-        if (x < maxX) {
+        if (x > 0) {
             x--;
         }
     }
