@@ -8,5 +8,9 @@ public class Game {
         Robot robot = board.getRobot();
         System.out.printf("Доска размером %dx%d создана. \n", boardSizeX, boardSizeY);
         System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
+
+        System.out.println("Робот шагает вверх");
+        robot.goUp();
+        System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
     }
 }
