@@ -3,6 +3,8 @@ package ru.arl.robot;
 public class Robot {
     private int x=0;
     private int y=0;
+    private final int maxX;
+    private final int maxY;
 
     public int getX() {
         return x;
@@ -20,9 +22,11 @@ public class Robot {
         this.y = y;
     }
 
-    public Robot(int x, int y) {
+    public Robot(int x, int y, int maxX, int maxY) {
         this.x = x;
         this.y = y;
+        this.maxX = maxX;
+        this.maxY = maxY;
     }
 
     public void goUp() {
