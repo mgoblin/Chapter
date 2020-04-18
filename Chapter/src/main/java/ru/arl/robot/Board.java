@@ -12,6 +12,14 @@ public class Board {
         return sizeY;
     }
 
+    public byte getMinX() {
+        return minX;
+    }
+
+    public byte getMinY() {
+        return minY;
+    }
+
     public Board(byte sizeX, byte sizeY) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
