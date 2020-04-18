@@ -26,10 +26,10 @@ public class Robot {
     }
 
     public void goUp() {
-        x++;
+        y++;
     }
-    public void goDown(int x) {}
-    public void goLeft(int y) {}
-    public void goRight(int y) {}
+    public void goDown() { y--; }
+    public void goLeft() { x--; }
+    public void goRight() { y++; }
 
 }
