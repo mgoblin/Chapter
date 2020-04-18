@@ -34,10 +34,4 @@ public class Robot {
     public void goLeft(int y) {}
     public void goRight(int y) {}
 
-    public static void main(String[] args) {
-        Robot ruben = new Robot(0,0);
-        ruben.goUp();
-        ruben.goUp();
-
-    }
 }
