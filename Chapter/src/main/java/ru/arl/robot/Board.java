@@ -24,9 +24,9 @@ public class Board {
         return minY;
     }
 
-    public Board(int sizeX, int sizeY, Robot robot) {
-        this.robot = robot;
+    public Board(int sizeX, int sizeY) {
         this.sizeX = sizeX;
         this.sizeY = sizeY;
+        this.robot = new Robot(0, 0);
     }
 }
