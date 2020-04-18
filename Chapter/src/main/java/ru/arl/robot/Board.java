@@ -5,7 +5,8 @@ public class Board {
     private final int minY = 0;
     private final int sizeX;
     private final int sizeY;
-    private final Robot robot();
+    private final Robot robot;
+
 
     public int getSizeX() {
         return sizeX;
@@ -23,7 +24,8 @@ public class Board {
         return minY;
     }
 
-    public Board(int sizeX, int sizeY) {
+    public Board(int sizeX, int sizeY, Robot robot) {
+        this.robot = robot;
         this.sizeX = sizeX;
         this.sizeY = sizeY;
     }
