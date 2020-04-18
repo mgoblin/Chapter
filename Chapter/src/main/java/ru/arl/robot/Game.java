@@ -2,6 +2,11 @@ package ru.arl.robot;
 
 public class Game {
     public static void main(String[] args) {
-        Board board = new Board(10, 10);
+        int boardSizeX = 10;
+        int boardSizeY = 10;
+        Board board = new Board(boardSizeX, boardSizeY);
+        Robot robot = board.getRobot();
+        System.out.printf("Доска размером %dx%d создана. \n", boardSizeX, boardSizeY);
+        System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
     }
 }
