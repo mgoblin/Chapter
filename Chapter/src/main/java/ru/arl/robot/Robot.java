@@ -30,10 +30,16 @@ public class Robot {
     }
 
     public void goUp() {
-        y++;
-    }
-    public void goDown() { y--; }
-    public void goLeft() { x--; }
-    public void goRight() { y++; }
+        if (y<maxY) {
+            y++; }}
+    public void goDown() {
+        if (y<maxY) {
+        y--; }}
+    public void goLeft() {
+        if (x<maxX) {
+        x--; }}
+    public void goRight() {
+        if(x<maxX){
+        x++; }}
 
 }
