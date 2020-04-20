@@ -20,7 +20,7 @@ public class Game {
                     break;
                 default: board.executeCommand(userCommand);
             }
-
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
         }
 
 //        System.out.println("Робот шагает вверх");
