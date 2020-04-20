@@ -20,6 +20,7 @@ public class Game {
                     break;
                 default: board.executeCommand(userCommand);
             }
+
         }
 
 //        System.out.println("Робот шагает вверх");
