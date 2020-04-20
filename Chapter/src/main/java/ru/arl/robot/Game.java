@@ -17,6 +17,7 @@ public class Game {
                 case QUIT: return;
                 case UNKNOWN:
                     System.out.println("Неизвестная команда");
+                    break;
                 default: board.executeCommand(userCommand);
             }
         }
