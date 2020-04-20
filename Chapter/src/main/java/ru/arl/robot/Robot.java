@@ -69,18 +69,25 @@ public class Robot {
 
     public void joystick() {
         Scanner j = new Scanner(System.in);
-        System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево");
+        System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево, Конец");
         String scanner = j.nextLine();
         if (scanner.equals("Вверх")) {
             goUp();
+            joystick();
         } else if (scanner.equals("Вниз")) {
             goDown();
+            joystick();
         } else if (scanner.equals("Вправо")) {
             goRight();
+            joystick();
         } else if (scanner.equals("Влево")) {
             goLeft();
+            joystick();
+        } else if(scanner.equals("Стоп")) {
+            System.out.println("Досвидание");
         } else {
             System.out.println("Ошибка! Неверная команда");
+            joystick();
         }
     }
 }
