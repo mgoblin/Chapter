@@ -10,7 +10,13 @@ public class Game {
         System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
         System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево, Конец");
 
-        robot.joystick();
+        Joystick joystick = new Joystick();
+        for(;;) {
+            final Command userCommand = joystick.getUserCommand();
+            switch (userCommand) {
+                case QUIT: return;
+            }
+        }
 
 //        System.out.println("Робот шагает вверх");
 //        robot.goUp();
