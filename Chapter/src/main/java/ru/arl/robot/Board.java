@@ -33,4 +33,8 @@ public class Board {
         this.sizeY = sizeY;
         this.robot = new Robot(0, 0, this.sizeX, this.sizeY);
     }
+
+    public void executeCommand(Command command) {
+
+    }
 }
