@@ -83,7 +83,7 @@ public class Robot {
         } else if (scanner.equals("Влево")) {
             goLeft();
             joystick();
-        } else if(scanner.equals("Стоп")) {
+        } else if(scanner.equals("Конец")) {
             System.out.println("Досвидание");
         } else {
             System.out.println("Ошибка! Неверная команда");
