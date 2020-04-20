@@ -35,7 +35,10 @@ public class Board {
     }
 
     public void executeCommand(Command command) {
-        if (command == Command.UP) robot.goUp();
+        if (command == Command.UP) {
+            System.out.println("Робот шагает вверх");
+            robot.goUp();
+        }
         if (command == Command.DOWN) robot.goDown();
         if (command == Command.LEFT) robot.goLeft();
         if (command == Command.RIGHT) robot.goRight();
