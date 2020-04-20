@@ -18,7 +18,22 @@ public class Game {
                 case UNKNOWN:
                     System.out.println("Неизвестная команда");
                     break;
-                default: board.executeCommand(userCommand);
+                case UP:
+                    System.out.println("Робот шагает вверх");
+                    board.executeCommand(userCommand);
+                    break;
+                case DOWN:
+                    System.out.println("Робот шагает вниз");
+                    board.executeCommand(userCommand);
+                    break;
+                case LEFT:
+                    System.out.println("Робот шагает влево");
+                    board.executeCommand(userCommand);
+                    break;
+                case RIGHT:
+                    System.out.println("Робот шагает вправо");
+                    board.executeCommand(userCommand);
+                    break;
             }
             System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
         }
