@@ -27,20 +27,16 @@ public class Robot {
     }
 
     public void goUp() {
-        System.out.println("Робот шагает вверх");
         if (y < maxY) {
             y++;
-            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
         } else {
             System.out.println("Тупик");
         }
     }
 
     public void goDown() {
-        System.out.println("Робот шагает вниз");
         if (y > 0) {
             y--;
-            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
         }
         else {
             System.out.println("Тупик");
@@ -48,45 +44,18 @@ public class Robot {
     }
 
     public void goLeft() {
-        System.out.println("Робот шагает налево");
         if (x > 0) {
             x--;
-            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
         } else {
             System.out.println("Тупик");
         }
     }
 
     public void goRight() {
-        System.out.println("Робот шагает направо");
         if (x < maxX) {
             x++;
-            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
         } else {
             System.out.println("Тупик");
-        }
-    }
-
-    public void joystick() {
-        Scanner j = new Scanner(System.in);
-        String scanner = j.nextLine();
-        if (scanner.equals("Вверх")) {
-            goUp();
-            joystick();
-        } else if (scanner.equals("Вниз")) {
-            goDown();
-            joystick();
-        } else if (scanner.equals("Вправо")) {
-            goRight();
-            joystick();
-        } else if (scanner.equals("Влево")) {
-            goLeft();
-            joystick();
-        } else if(scanner.equals("Конец")) {
-            System.out.println("Досвидание");
-        } else {
-            System.out.println("Ошибка! Неверная команда");
-            joystick();
         }
     }
 }
