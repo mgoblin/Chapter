@@ -15,6 +15,9 @@ public class Game {
             final Command userCommand = joystick.getUserCommand();
             switch (userCommand) {
                 case QUIT: return;
+                case UNKNOWN:
+                    System.out.println("Неизвестная команда");
+                default: board.executeCommand(userCommand);
             }
         }
 
