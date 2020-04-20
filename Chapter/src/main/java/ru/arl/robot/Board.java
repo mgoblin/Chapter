@@ -39,6 +39,5 @@ public class Board {
         if (command == Command.DOWN) robot.goDown();
         if (command == Command.LEFT) robot.goLeft();
         if (command == Command.RIGHT) robot.goRight();
-
     }
 }
