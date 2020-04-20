@@ -20,19 +20,19 @@ public class Game {
                     break;
                 case UP:
                     System.out.println("Робот шагает вверх");
-                    board.executeCommand(userCommand);
+                    robot.goUp();
                     break;
                 case DOWN:
                     System.out.println("Робот шагает вниз");
-                    board.executeCommand(userCommand);
+                    robot.goDown();
                     break;
                 case LEFT:
                     System.out.println("Робот шагает влево");
-                    board.executeCommand(userCommand);
+                    robot.goLeft();
                     break;
                 case RIGHT:
                     System.out.println("Робот шагает вправо");
-                    board.executeCommand(userCommand);
+                    robot.goRight();
                     break;
             }
             System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());

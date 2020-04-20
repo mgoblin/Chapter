@@ -33,11 +33,4 @@ public class Board {
         this.sizeY = sizeY;
         this.robot = new Robot(0, 0, this.sizeX, this.sizeY);
     }
-
-    public void executeCommand(Command command) {
-        if (command == Command.UP) robot.goUp();
-        if (command == Command.DOWN) robot.goDown();
-        if (command == Command.LEFT) robot.goLeft();
-        if (command == Command.RIGHT) robot.goRight();
-    }
 }
