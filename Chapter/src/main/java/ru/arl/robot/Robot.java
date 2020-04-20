@@ -69,7 +69,6 @@ public class Robot {
 
     public void joystick() {
         Scanner j = new Scanner(System.in);
-        System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево, Конец");
         String scanner = j.nextLine();
         if (scanner.equals("Вверх")) {
             goUp();
