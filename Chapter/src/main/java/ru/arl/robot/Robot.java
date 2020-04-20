@@ -1,10 +1,13 @@
 package ru.arl.robot;
 
+import java.util.Scanner;
+
 public class Robot {
     private int x = 0;
     private int y = 0;
     private final int maxX;
     private final int maxY;
+
 
     public int getX() {
         return x;
@@ -24,27 +27,60 @@ public class Robot {
     }
 
     public void goUp() {
+        System.out.println("Робот шагает вверх");
         if (y < maxY) {
             y++;
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
+        } else {
+            System.out.println("Тупик");
         }
     }
 
     public void goDown() {
+        System.out.println("Робот шагает вниз");
         if (y > 0) {
             y--;
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
+        }
+        else {
+            System.out.println("Тупик");
         }
     }
 
     public void goLeft() {
+        System.out.println("Робот шагает налево");
         if (x > 0) {
             x--;
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
+        } else {
+            System.out.println("Тупик");
         }
     }
 
     public void goRight() {
+        System.out.println("Робот шагает направо");
         if (x < maxX) {
             x++;
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", getX(), getY());
+        } else {
+            System.out.println("Тупик");
         }
     }
 
+    public void joystick() {
+        Scanner j = new Scanner(System.in);
+        System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево");
+        String scanner = j.nextLine();
+        if (scanner.equals("Вверх")) {
+            goUp();
+        } else if (scanner.equals("Вниз")) {
+            goDown();
+        } else if (scanner.equals("Вправо")) {
+            goRight();
+        } else if (scanner.equals("Влево")) {
+            goLeft();
+        } else {
+            System.out.println("Ошибка! Неверная команда");
+        }
+    }
 }
