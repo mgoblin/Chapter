@@ -28,15 +28,27 @@ public class Game {
                     break;
                 case DOWN:
                     System.out.println("Робот шагает вниз");
-                    robot.goDown();
+                    try {
+                        robot.goDown();
+                    } catch (OutOfBorderException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case LEFT:
                     System.out.println("Робот шагает влево");
-                    robot.goLeft();
+                    try {
+                        robot.goLeft();
+                    } catch (OutOfBorderException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case RIGHT:
                     System.out.println("Робот шагает вправо");
-                    robot.goRight();
+                    try {
+                        robot.goRight();
+                    } catch (OutOfBorderException e) {
+                        e.printStackTrace();
+                    }
                     break;
             }
             System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());

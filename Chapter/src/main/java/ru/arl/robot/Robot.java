@@ -34,28 +34,28 @@ public class Robot {
         }
     }
 
-    public void goDown() {
+    public void goDown() throws OutOfBorderException {
         if (y > 0) {
             y--;
         }
         else {
-            System.out.println("Тупик");
+            throw new OutOfBorderException("Не ходи за пределы доски. Упадешь и сломаешь ножки.");
         }
     }
 
-    public void goLeft() {
+    public void goLeft() throws OutOfBorderException {
         if (x > 0) {
             x--;
         } else {
-            System.out.println("Тупик");
+            throw new OutOfBorderException("Не ходи за пределы доски. Упадешь и сломаешь ножки.");
         }
     }
 
-    public void goRight() {
+    public void goRight() throws OutOfBorderException {
         if (x < maxX) {
             x++;
         } else {
-            System.out.println("Тупик");
+            throw new OutOfBorderException("Не ходи за пределы доски. Упадешь и сломаешь ножки.");
         }
     }
 }
