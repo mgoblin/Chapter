@@ -26,11 +26,11 @@ public class Robot {
         this.maxY = maxY;
     }
 
-    public void goUp() {
+    public void goUp() throws OutOfBorderException {
         if (y < maxY) {
             y++;
         } else {
-            System.out.println("Тупик");
+            throw new OutOfBorderException("Не ходи за пределы доски. Упадешь и сломаешь ножки.");
         }
     }
 
