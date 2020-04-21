@@ -20,7 +20,11 @@ public class Game {
                     break;
                 case UP:
                     System.out.println("Робот шагает вверх");
-                    robot.goUp();
+                    try {
+                        robot.goUp();
+                    } catch (OutOfBorderException e) {
+                        System.out.println(e.getMessage());
+                    }
                     break;
                 case DOWN:
                     System.out.println("Робот шагает вниз");
