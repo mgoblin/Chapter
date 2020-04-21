@@ -18,6 +18,6 @@ public class TestExceptions {
     public static void main(String[] args) {
         TestExceptions testExceptions = new TestExceptions();
 
-        System.out.println("Результат деления: " + testExceptions.divide(10, 5));
+        System.out.println("Результат деления: " + testExceptions.divide(0, 0));
     }
 }
