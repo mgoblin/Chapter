@@ -7,51 +7,40 @@ public class Game {
         Board board = new Board(boardSizeX, boardSizeY);
         Robot robot = board.getRobot();
         System.out.printf("Доска размером %dx%d создана. \n", boardSizeX, boardSizeY);
-        System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
-        System.out.println("Введите команду из списка:"+ '\n' + "Вверх, Вниз, Вправо, Влево, Конец");
+        System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(), robot.getY());
+        System.out.println("Введите команду из списка:" + '\n' + "Вверх, Вниз, Вправо, Влево, Конец");
 
         Joystick joystick = new Joystick();
-        for(;;) {
+        for (; ; ) {
             final Command userCommand = joystick.getUserCommand();
-            switch (userCommand) {
-                case QUIT: return;
-                case UNKNOWN:
-                    System.out.println("Неизвестная команда");
-                    break;
-                case UP:
-                    System.out.println("Робот шагает вверх");
-                    try {
+            try {
+                switch (userCommand) {
+                    case QUIT:
+                        return;
+                    case UNKNOWN:
+                        System.out.println("Неизвестная команда");
+                        break;
+                    case UP:
+                        System.out.println("Робот шагает вверх");
                         robot.goUp();
-                    } catch (OutOfBorderException e) {
-                        System.out.println(e.getMessage());
-                    }
-                    break;
-                case DOWN:
-                    System.out.println("Робот шагает вниз");
-                    try {
+                        break;
+                    case DOWN:
+                        System.out.println("Робот шагает вниз");
                         robot.goDown();
-                    } catch (OutOfBorderException e) {
-                        System.out.println(e.getMessage());
-                    }
-                    break;
-                case LEFT:
-                    System.out.println("Робот шагает влево");
-                    try {
+                        break;
+                    case LEFT:
+                        System.out.println("Робот шагает влево");
                         robot.goLeft();
-                    } catch (OutOfBorderException e) {
-                        System.out.println(e.getMessage());
-                    }
-                    break;
-                case RIGHT:
-                    System.out.println("Робот шагает вправо");
-                    try {
+                        break;
+                    case RIGHT:
+                        System.out.println("Робот шагает вправо");
                         robot.goRight();
-                    } catch (OutOfBorderException e) {
-                        System.out.println(e.getMessage());
-                    }
-                    break;
+                        break;
+                }
+            } catch (OutOfBorderException e) {
+                System.out.println(e.getMessage());
             }
-            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(),robot.getY());
+            System.out.printf("Робот размещен в позиции x = %d, y = %d. \n", robot.getX(), robot.getY());
         }
 
 //        System.out.println("Робот шагает вверх");
