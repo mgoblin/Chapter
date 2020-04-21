@@ -17,6 +17,7 @@ public class TestExceptions {
 
     public static void main(String[] args) {
         TestExceptions testExceptions = new TestExceptions();
-        testExceptions.divide(0, 0);
+
+        System.out.println("Результат деления: " + testExceptions.divide(10, 5));
     }
 }
