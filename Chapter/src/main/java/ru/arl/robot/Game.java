@@ -31,7 +31,7 @@ public class Game {
                     try {
                         robot.goDown();
                     } catch (OutOfBorderException e) {
-                        e.printStackTrace();
+                        System.out.println(e.getMessage());
                     }
                     break;
                 case LEFT:
@@ -39,7 +39,7 @@ public class Game {
                     try {
                         robot.goLeft();
                     } catch (OutOfBorderException e) {
-                        e.printStackTrace();
+                        System.out.println(e.getMessage());
                     }
                     break;
                 case RIGHT:
@@ -47,7 +47,7 @@ public class Game {
                     try {
                         robot.goRight();
                     } catch (OutOfBorderException e) {
-                        e.printStackTrace();
+                        System.out.println(e.getMessage());
                     }
                     break;
             }
