@@ -8,11 +8,14 @@ public class TryCatchFinally {
     }
 
     public static void main(String[] args) {
-        TryCatchFinally program = new TryCatchFinally();
         try {
+            TryCatchFinally program = new TryCatchFinally();
             program.run();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("Есть или нет Exception, а я выведу это сообщение");
         }
+        System.out.println("Идем дальше");
     }
 }
