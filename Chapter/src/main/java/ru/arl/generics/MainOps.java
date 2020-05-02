@@ -24,9 +24,7 @@ public class MainOps {
         System.out.println(doubleOperationBox.getOperand1());
         System.out.println(doubleOperationBox.getOperand2());
 
-        String a1 = "Ruben";
-        String a2 = "Akopyan";
-        User ruben = new User(a1,a2);
+        User ruben = new User("Ruben", "Akopyan");
         System.out.println(ruben);
 //        OperationsBox<String> stringBox = new StringBox(s1, s2);
 //        System.out.println(stringBox.substract());
