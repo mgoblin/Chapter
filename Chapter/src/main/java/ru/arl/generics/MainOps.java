@@ -32,5 +32,7 @@ public class MainOps {
         OperationsBox<Integer> integerBox = new IntegerBox(i1, i2);
         System.out.println(integerBox.add());
 
+        final BoxHandler boxHandler = new BoxHandler();
+        boxHandler.addsForAll(new OperationsBox<?>[] {stringBox, integerBox});
     }
 }
