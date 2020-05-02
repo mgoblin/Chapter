@@ -17,6 +17,12 @@ public class MainOps {
         System.out.println(integerOperationsBox.getOperand1());
         System.out.println(integerOperationsBox.getOperand2());
 
+        Double d1 = 1.2;
+        Double d2 = 3.4;
+        OperationsBox<Double> doubleOperationBox = new OperationsBox<>(d1, d2);
+        System.out.println(doubleOperationBox);
+        System.out.println(doubleOperationBox.getOperand1());
+        System.out.println(doubleOperationBox.getOperand2());
 //        OperationsBox<String> stringBox = new StringBox(s1, s2);
 //        System.out.println(stringBox.substract());
 //
