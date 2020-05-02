@@ -3,7 +3,7 @@ package ru.arl.generics;
 public class MainOps {
     public static void main(String[] args) {
         String s1 = "S1";
-        String s2 = "S1S2";
+        String s2 = "This is S1S2";
 
         OperationsBox<String> stringOperationsBox = new OperationsBox<>(s1, s2);
         System.out.println(stringOperationsBox.toString());
