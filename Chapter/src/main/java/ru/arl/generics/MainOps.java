@@ -26,11 +26,11 @@ public class MainOps {
 
         User ruben = new User("Ruben", "Akopyan");
         System.out.println(ruben);
-//        OperationsBox<String> stringBox = new StringBox(s1, s2);
-//        System.out.println(stringBox.substract());
-//
-//        OperationsBox<Integer> integerBox = new IntegerBox(i1, i2);
-//        System.out.println(integerBox.add());
+        OperationsBox<String> stringBox = new StringBox(s2, s1);
+        System.out.println(stringBox.substract());
+
+        OperationsBox<Integer> integerBox = new IntegerBox(i1, i2);
+        System.out.println(integerBox.add());
 
     }
 }
