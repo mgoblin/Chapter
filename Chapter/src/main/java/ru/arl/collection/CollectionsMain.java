@@ -48,5 +48,10 @@ public class CollectionsMain {
         otherNames.add("Петя");
         names.addAll(otherNames);
         System.out.println(names);
+
+        // Все чистим
+        names.clear();
+        System.out.println(names);
+        System.out.println(names.isEmpty());
     }
 }
