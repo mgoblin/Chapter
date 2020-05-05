@@ -24,5 +24,8 @@ public class CollectionsMain {
         if (names.contains("Рубен")) {
             System.out.println("Есть!!");
         }
+
+        System.out.println("А как мне узнать сколько элементов в коллекции?");
+        System.out.println(names.size());
     }
 }
