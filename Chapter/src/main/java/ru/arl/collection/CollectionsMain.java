@@ -2,6 +2,7 @@ package ru.arl.collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class CollectionsMain {
     public static void main(String[] args) {
@@ -33,6 +34,12 @@ public class CollectionsMain {
         // Способ 1
         for(String element: names) {
             System.out.println("Элемент: " + element);
+        }
+
+        // Способ 2 - итератор
+        final Iterator<String> iterator = names.iterator();
+        while(iterator.hasNext()) {
+            System.out.println("Элемент: " + iterator.next());
         }
     }
 }
