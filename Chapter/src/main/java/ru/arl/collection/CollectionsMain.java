@@ -27,5 +27,12 @@ public class CollectionsMain {
 
         System.out.println("А как мне узнать сколько элементов в коллекции?");
         System.out.println(names.size());
+
+        System.out.println("А какие это элементы. Я уже забыл, надо их распечатать");
+
+        // Способ 1
+        for(String element: names) {
+            System.out.println("Элемент: " + element);
+        }
     }
 }
