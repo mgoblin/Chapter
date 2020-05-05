@@ -19,5 +19,10 @@ public class CollectionsMain {
         } else {
             System.out.println("Удалить не получилось");
         }
+
+        System.out.println("А как мне понять есть ли такая строка в коллекции?");
+        if (names.contains("Рубен")) {
+            System.out.println("Есть!!");
+        }
     }
 }
