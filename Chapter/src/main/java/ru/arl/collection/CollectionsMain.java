@@ -12,7 +12,12 @@ public class CollectionsMain {
         System.out.println(names);
 
         names.remove("Просто строка");
-
         System.out.println(names);
+
+        if (names.remove("Какая-то строка")) {
+            System.out.println("Какая-то строка удалена");
+        } else {
+            System.out.println("Удалить не получилось");
+        }
     }
 }
