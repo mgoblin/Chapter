@@ -9,6 +9,9 @@ public class CollectionsMain {
         names.add("Рубен");
         names.add("Михаил");
         names.add("Просто строка");
+        System.out.println(names);
+
+        names.remove("Просто строка");
 
         System.out.println(names);
     }
