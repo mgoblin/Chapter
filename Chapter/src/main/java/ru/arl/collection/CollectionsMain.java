@@ -8,6 +8,7 @@ public class CollectionsMain {
         Collection<String> names = new ArrayList<>();
         names.add("Рубен");
         names.add("Михаил");
+        names.add("Просто строка");
 
         System.out.println(names);
     }
