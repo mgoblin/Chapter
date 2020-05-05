@@ -41,5 +41,12 @@ public class CollectionsMain {
         while(iterator.hasNext()) {
             System.out.println("Элемент: " + iterator.next());
         }
+
+        // Добавим одну коллекцию к другой?
+        Collection<String> otherNames = new ArrayList<>();
+        otherNames.add("Вова");
+        otherNames.add("Петя");
+        names.addAll(otherNames);
+        System.out.println(names);
     }
 }
