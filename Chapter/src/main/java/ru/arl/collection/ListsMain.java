@@ -10,5 +10,8 @@ public class ListsMain {
         names.add("Михаил");
 
         System.out.println(names);
+
+        final List<String> names2 = List.of("Злата", "Тея");
+        System.out.println(names2);
     }
 }
