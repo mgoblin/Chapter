@@ -14,7 +14,7 @@ public class Task3_1 {
     private static int FINISH = 0;
 
     private static int generateRandomNumber() {
-        int num = 1;//random.nextInt(10);
+        int num = 5;//random.nextInt(10);
         System.out.println("Угадай число с 3 попыток от 0 до 9");
         return num;
     }
@@ -33,8 +33,19 @@ public class Task3_1 {
         System.out.println((tryCount - 1) > 0 ? " у вас осталось " + (tryCount - 1) + " попыток." : "Попытки закончились, вы проиграли.");
     }
 
+    public static boolean wantNextGame(boolean first) {
+        if (!first) {
+            System.out.printf(
+                    "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
+                    NEXT_GAME,
+                    FINISH);
+        }
+        return first || scanner.nextInt() == NEXT_GAME;
+    }
+
     private static void guessNumber() {
-        for (int num = generateRandomNumber(); true; num = generateRandomNumber()) {
+        int num = generateRandomNumber();
+        for ( boolean firstGame = true; wantNextGame(firstGame); firstGame = false) {
 
             for (int tryCount = 3; tryCount > 0; tryCount--) {
                 int guess = getUserGuess();
@@ -44,13 +55,6 @@ public class Task3_1 {
                 } else {
                     printTip(guess, num, tryCount);
                 }
-            }
-            System.out.printf(
-                "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
-                NEXT_GAME,
-                FINISH);
-            if (scanner.nextInt() == FINISH) {
-                break;
             }
     }
 }
