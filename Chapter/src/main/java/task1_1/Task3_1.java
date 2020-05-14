@@ -7,14 +7,20 @@ public class Task3_1 {
     public static void main(String[] args) {
         guessNumber();
     }
+
     private static Random random = new Random();
+    private static Scanner scanner = new Scanner(System.in);
+
+    private static int generateRandomNumber() {
+        int num = random.nextInt(10);
+        System.out.println("Угадай число с 3 попыток от 0 до 9");
+        return num;
+    }
 
     private static void guessNumber() {
-        Scanner scanner = new Scanner(System.in);
 
         do {
-            int num = random.nextInt(10);
-            System.out.println("Угадай число с 3 попыток от 0 до 9");
+            int num = generateRandomNumber();
 
             for (int i = 3; i > 0; i--) {
                 System.out.println("Введи свой ответ:");
