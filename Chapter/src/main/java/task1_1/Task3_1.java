@@ -10,6 +10,8 @@ public class Task3_1 {
 
     private static Random random = new Random();
     private static Scanner scanner = new Scanner(System.in);
+    private static int NEXT_GAME = 1;
+    private static int FINISH = 0;
 
     private static int generateRandomNumber() {
         int num = random.nextInt(10);
@@ -26,7 +28,7 @@ public class Task3_1 {
         return guess == num;
     }
 
-    public static void getTip(int guess, int num, int tryCount) {
+    public static void printTip(int guess, int num, int tryCount) {
         System.out.println(guess > num ? "Введенное число больше " : "Введенное число меньше ");
         System.out.println((tryCount - 1) > 0 ? " у вас осталось " + (tryCount - 1) + " попыток." : "Попытки закончились, вы проиграли.");
     }
@@ -41,13 +43,16 @@ public class Task3_1 {
                     System.out.println("Вы угадали число!");
                     break;
                 } else {
-                    getTip(guess, num, tryCount);
+                    printTip(guess, num, tryCount);
                 }
 
             }
-            System.out.println("Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет)");
-        }
-        while (scanner.nextInt() == 1);
+            System.out.printf(
+                    "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
+                    NEXT_GAME,
+                    FINISH
+            );
+        } while (scanner.nextInt() == NEXT_GAME);
     }
 
 
