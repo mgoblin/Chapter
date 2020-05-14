@@ -17,24 +17,39 @@ public class Task3_1 {
         return num;
     }
 
-    private static void guessNumber() {
+    public static int getUserGuess() {
+        System.out.println("Введи свой ответ:");
+        return scanner.nextInt();
+    }
 
+    public static boolean isGuessSuccess(int guess, int num) {
+        return guess == num;
+    }
+
+    public static void getTip(int guess, int num, int tryCount) {
+        System.out.println(guess > num ? "Введенное число больше " : "Введенное число меньше ");
+        System.out.println((tryCount - 1) > 0 ? " у вас осталось " + (tryCount - 1) + " попыток." : "Попытки закончились, вы проиграли.");
+    }
+
+    private static void guessNumber() {
         do {
             int num = generateRandomNumber();
 
-            for (int i = 3; i > 0; i--) {
-                System.out.println("Введи свой ответ:");
-                int questionNum = scanner.nextInt();
-                if (questionNum == num) {
+            for (int tryCount = 3; tryCount > 0; tryCount--) {
+                int guess = getUserGuess();
+                if (isGuessSuccess(guess, num)) {
                     System.out.println("Вы угадали число!");
                     break;
+                } else {
+                    getTip(guess, num, tryCount);
                 }
-                System.out.println(questionNum > num ? "Введенное число больше " : "Введенное число меньше ");
-                System.out.println((i - 1) > 0 ? " у вас осталось " + (i - 1) + " попыток." : "Попытки закончились, вы проиграли.");
+
             }
             System.out.println("Повторить игру еще раз? 1 – да / 0 – нет»(1 – повторить, 0 – нет)");
         }
         while (scanner.nextInt() == 1);
     }
+
+
 }
 
