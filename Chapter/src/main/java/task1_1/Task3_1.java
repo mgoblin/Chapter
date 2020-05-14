@@ -34,7 +34,7 @@ public class Task3_1 {
     }
 
     private static void guessNumber() {
-        for (int num = generateRandomNumber(); ; ) {
+        for (int num = generateRandomNumber(); num > 10; num = generateRandomNumber()) {
 
             for (int tryCount = 3; tryCount > 0; tryCount--) {
                 int guess = getUserGuess();
