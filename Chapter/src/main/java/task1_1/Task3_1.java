@@ -14,7 +14,7 @@ public class Task3_1 {
     private static int FINISH = 0;
 
     private static int generateRandomNumber() {
-        int num = random.nextInt(10);
+        int num = 1;//random.nextInt(10);
         System.out.println("Угадай число с 3 попыток от 0 до 9");
         return num;
     }
@@ -34,7 +34,7 @@ public class Task3_1 {
     }
 
     private static void guessNumber() {
-        for (int num = generateRandomNumber(); num > 10; num = generateRandomNumber()) {
+        for (int num = generateRandomNumber(); true; num = generateRandomNumber()) {
 
             for (int tryCount = 3; tryCount > 0; tryCount--) {
                 int guess = getUserGuess();
@@ -44,7 +44,6 @@ public class Task3_1 {
                 } else {
                     printTip(guess, num, tryCount);
                 }
-
             }
             System.out.printf(
                 "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
