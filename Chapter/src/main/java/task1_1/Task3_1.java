@@ -34,8 +34,7 @@ public class Task3_1 {
     }
 
     private static void guessNumber() {
-        do {
-            int num = generateRandomNumber();
+        for (int num = generateRandomNumber(); ; ) {
 
             for (int tryCount = 3; tryCount > 0; tryCount--) {
                 int guess = getUserGuess();
@@ -48,12 +47,14 @@ public class Task3_1 {
 
             }
             System.out.printf(
-                    "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
-                    NEXT_GAME,
-                    FINISH
-            );
-        } while (scanner.nextInt() == NEXT_GAME);
+                "Повторить игру еще раз? %1$d – да / %2$d – нет»(%1$d – повторить, %2$d – нет)",
+                NEXT_GAME,
+                FINISH);
+            if (scanner.nextInt() == FINISH) {
+                break;
+            }
     }
+}
 
 
 }
