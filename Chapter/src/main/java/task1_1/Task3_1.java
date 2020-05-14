@@ -14,7 +14,7 @@ public class Task3_1 {
     private static int FINISH = 0;
 
     private static int generateRandomNumber() {
-        int num = 5;//random.nextInt(10);
+        int num = random.nextInt(10);
         System.out.println("Угадай число с 3 попыток от 0 до 9");
         return num;
     }
