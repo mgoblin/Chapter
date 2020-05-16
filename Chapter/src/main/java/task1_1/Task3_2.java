@@ -27,21 +27,21 @@ public class Task3_2 {
             System.out.println("Введи свой ответ: (для выхода из игры, просто нажмите Enter)");
             String answer = scanner.nextLine();
 
-            if (answer.equals("")) break;
-
-            else if (word.equals(answer)) {
+            if (answer.equals("")) {
+                break;
+            } else if (word.equals(answer)) {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
+            } else {
+                char[] charsAnswer = answer.toCharArray();
+                for (int i = 0; i < lenWord; i++) {
+                    if (i >= charsAnswer.length) break;
+                    if (word.charAt(i) != charsAnswer[i]) charsAnswer[i] = '#';
+                }
+                StringBuilder comment = new StringBuilder(String.valueOf(charsAnswer));
+                for (int i = comment.length(); i < 15; i++) comment.append("#");
+                System.out.println(comment);
             }
-
-            char[] charsAnswer = answer.toCharArray();
-            for (int i = 0; i < lenWord; i++) {
-                if (i >= charsAnswer.length) break;
-                if (word.charAt(i) != charsAnswer[i]) charsAnswer[i] = '#';
-            }
-            StringBuilder comment = new StringBuilder(String.valueOf(charsAnswer));
-            for (int i = comment.length(); i < 15; i++) comment.append("#");
-            System.out.println(comment);
         }
         while (true);
     }
