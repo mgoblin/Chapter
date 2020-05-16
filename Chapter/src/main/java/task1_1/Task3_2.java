@@ -6,14 +6,17 @@ import java.util.Random;
 public class Task3_2 {
     private static Random random = new Random();
 
+    private static String getRandomWord(String[] words) {
+        return words[random.nextInt(words.length - 1)];
+    }
+
     private static void guessWord() {
 
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
                 "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut",
                 "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
-        int indWord = random.nextInt(words.length - 1);
-        String word = words[indWord];
+        String word = getRandomWord(words);
         int lenWord = word.length();
         System.out.println("Я загадал фрукт, попробуй отгадать его");
         System.out.println(word);
