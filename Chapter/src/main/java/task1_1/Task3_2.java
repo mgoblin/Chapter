@@ -37,19 +37,13 @@ public class Task3_2 {
     }
 
 
-    public static StringBuilder getTip(String answer, String word) {
-
+    public static String getTip(String answer, String word) {
         char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
         char[] charsAnswer = answer.toCharArray();
-        for (int i = 0; i < charMarks.length; i++) {
-            if (i >= charsAnswer.length) break;
+        for (int i = 0; i < answer.length(); i++) {
             if (word.charAt(i) == charsAnswer[i]) charMarks[i] = charsAnswer[i];
         }
-        StringBuilder mark = new StringBuilder();
-        for (int i = 0; i < charMarks.length; i++) {
-            mark.append(charMarks[i]);
-        }
-        return mark;
+        return new String(charMarks);
     }
 
     public static void main(String[] args) {
