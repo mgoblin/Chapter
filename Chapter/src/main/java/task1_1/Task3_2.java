@@ -25,7 +25,8 @@ public class Task3_2 {
         do {
 
             System.out.println("Введи свой ответ: (для выхода из игры, просто нажмите Enter)");
-            String answer = scanner.nextLine().substring(0, MAX_LENGTH - 1);
+            String answer = scanner.nextLine();
+            answer = answer.substring(0, Math.min(answer.length(), MAX_LENGTH));
 
             if (word.equals(answer)) {
                 System.out.println("Вы угадали слово, игра закончена!!!");
