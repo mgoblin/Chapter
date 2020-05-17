@@ -5,11 +5,12 @@ import java.util.Random;
 
 public class Task3_2 {
     private static Random random = new Random();
+    public static char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#',};
+
 
     private static String getRandomWord(String[] words) {
         return words[random.nextInt(words.length - 1)];
     }
-
 
     private static void guessWord() {
 
@@ -18,7 +19,6 @@ public class Task3_2 {
                 "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
         String word = getRandomWord(words);
-        int lenWord = word.length();
         System.out.println("Я загадал фрукт, попробуй отгадать его");
         System.out.println(word);
 
@@ -34,26 +34,24 @@ public class Task3_2 {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                System.out.println(getTip(answer,charMarks,word));
+                System.out.println(getTip(answer, charMarks, word));
             }
-        }
-        while (true);
+        } while (true);
     }
 
-    public static char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
 
-    public static StringBuilder getTip(String answer, char[] charMarks,String word){
+    public static StringBuilder getTip(String answer, char[] charMarks, String word) {
         char[] charsAnswer = answer.toCharArray();
         for (int i = 0; i < charMarks.length; i++) {
             if (i >= charsAnswer.length) break;
             if (word.charAt(i) == charsAnswer[i]) charMarks[i] = charsAnswer[i];
-            }
+        }
         StringBuilder mark = new StringBuilder();
         for (int i = 0; i < charMarks.length; i++) {
             mark.append(charMarks[i]);
         }
         return mark;
-        }
+    }
 
     public static void main(String[] args) {
         guessWord();
