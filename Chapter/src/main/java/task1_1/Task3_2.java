@@ -40,11 +40,9 @@ public class Task3_2 {
 
     public static String getTip(String answer, String word) {
         char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
-        char[] charsAnswer = answer.toCharArray();
-
         int len = Math.min(answer.length(), word.length());
         for (int i = 0; i < len; i++) {
-            if (word.charAt(i) == charsAnswer[i]) charMarks[i] = charsAnswer[i];
+            if (word.charAt(i) == answer.charAt(i)) charMarks[i] = answer.charAt(i);
         }
         return new String(charMarks);
     }
@@ -53,4 +51,3 @@ public class Task3_2 {
         guessWord();
     }
 }
-//переписать. Сначала решетки 15, потом заменить в них на буквы. Больше методов
