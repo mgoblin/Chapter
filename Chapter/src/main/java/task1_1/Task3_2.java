@@ -34,14 +34,13 @@ public class Task3_2 {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#'};
                 System.out.println(getHelp(answer,charMarks,word));
             }
         }
         while (true);
     }
 
-    public char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
+    public static char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
 
     public static StringBuilder getHelp(String answer, char[] charMarks,String word){
         char[] charsAnswer = answer.toCharArray();
