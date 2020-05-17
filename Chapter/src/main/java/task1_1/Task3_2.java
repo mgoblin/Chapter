@@ -34,7 +34,7 @@ public class Task3_2 {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                System.out.println(getHelp(answer,charMarks,word));
+                System.out.println(getTip(answer,charMarks,word));
             }
         }
         while (true);
@@ -42,7 +42,7 @@ public class Task3_2 {
 
     public static char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
 
-    public static StringBuilder getHelp(String answer, char[] charMarks,String word){
+    public static StringBuilder getTip(String answer, char[] charMarks,String word){
         char[] charsAnswer = answer.toCharArray();
         for (int i = 0; i < charMarks.length; i++) {
             if (i >= charsAnswer.length) break;
