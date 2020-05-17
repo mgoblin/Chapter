@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Task3_2 {
     private static Random random = new Random();
-    public static char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#',};
+    public static char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
 
 
     private static String getRandomWord(String[] words) {
