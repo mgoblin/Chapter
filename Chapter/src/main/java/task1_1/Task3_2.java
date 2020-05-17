@@ -4,9 +4,8 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Task3_2 {
+    private static int MAX_LENGTH = 15;
     private static Random random = new Random();
-    public static char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
-
 
     private static String getRandomWord(String[] words) {
         return words[random.nextInt(words.length - 1)];
@@ -19,28 +18,28 @@ public class Task3_2 {
                 "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
         String word = getRandomWord(words);
-        System.out.println("Я загадал фрукт, попробуй отгадать его");
+        System.out.println("Я загадал фрукт (не более 15 букв), попробуй отгадать его");
         System.out.println(word);
 
         Scanner scanner = new Scanner(System.in);
         do {
 
             System.out.println("Введи свой ответ: (для выхода из игры, просто нажмите Enter)");
-            String answer = scanner.nextLine();
+            String answer = scanner.nextLine().substring(0, MAX_LENGTH - 1);
 
-            if (answer.equals("")) {
-                break;
-            } else if (word.equals(answer)) {
+            if (word.equals(answer)) {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                System.out.println(getTip(answer, charMarks, word));
+                System.out.println(getTip(answer, word));
             }
         } while (true);
     }
 
 
-    public static StringBuilder getTip(String answer, char[] charMarks, String word) {
+    public static StringBuilder getTip(String answer, String word) {
+
+        char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
         char[] charsAnswer = answer.toCharArray();
         for (int i = 0; i < charMarks.length; i++) {
             if (i >= charsAnswer.length) break;
