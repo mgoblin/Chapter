@@ -34,7 +34,7 @@ public class Task3_2 {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
+                char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#'};
                 System.out.println(getHelp(answer,charMarks,word));
             }
         }
