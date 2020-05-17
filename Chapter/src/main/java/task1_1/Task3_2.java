@@ -10,6 +10,7 @@ public class Task3_2 {
         return words[random.nextInt(words.length - 1)];
     }
 
+
     private static void guessWord() {
 
         String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
@@ -33,18 +34,27 @@ public class Task3_2 {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
             } else {
-                char[] charsAnswer = answer.toCharArray();
-                for (int i = 0; i < lenWord; i++) {
-                    if (i >= charsAnswer.length) break;
-                    if (word.charAt(i) != charsAnswer[i]) charsAnswer[i] = '#';
-                }
-                StringBuilder comment = new StringBuilder(String.valueOf(charsAnswer));
-                for (int i = comment.length(); i < 15; i++) comment.append("#");
-                System.out.println(comment);
+                char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
+                System.out.println(getHelp(answer,charMarks,word));
             }
         }
         while (true);
     }
+
+    public char[] charMarks = {'#','#','#','#','#','#','#','#','#','#','#','#','#','#','#','#',};
+
+    public static StringBuilder getHelp(String answer, char[] charMarks,String word){
+        char[] charsAnswer = answer.toCharArray();
+        for (int i = 0; i < charMarks.length; i++) {
+            if (i >= charsAnswer.length) break;
+            if (word.charAt(i) == charsAnswer[i]) charMarks[i] = charsAnswer[i];
+            }
+        StringBuilder mark = new StringBuilder();
+        for (int i = 0; i < charMarks.length; i++) {
+            mark.append(charMarks[i]);
+        }
+        return mark;
+        }
 
     public static void main(String[] args) {
         guessWord();
