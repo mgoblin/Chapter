@@ -40,7 +40,9 @@ public class Task3_2 {
     public static String getTip(String answer, String word) {
         char[] charMarks = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
         char[] charsAnswer = answer.toCharArray();
-        for (int i = 0; i < answer.length(); i++) {
+
+        int len = Math.min(answer.length(), word.length());
+        for (int i = 0; i < len; i++) {
             if (word.charAt(i) == charsAnswer[i]) charMarks[i] = charsAnswer[i];
         }
         return new String(charMarks);
