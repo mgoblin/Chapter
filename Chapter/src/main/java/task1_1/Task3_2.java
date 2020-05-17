@@ -7,19 +7,18 @@ public class Task3_2 {
     private static int MAX_LENGTH = 15;
     private static Random random = new Random();
 
-    private static String getRandomWord(String[] words) {
+    private static String getRandomFruit() {
+        String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
+                "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut",
+                "pear", "pepper", "pineapple", "pumpkin", "potato"};
+
         return words[random.nextInt(words.length - 1)];
     }
 
     private static void guessWord() {
 
-        String[] words = {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli", "carrot", "cherry",
-                "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut",
-                "pear", "pepper", "pineapple", "pumpkin", "potato"};
-
-        String word = getRandomWord(words);
+        String word = getRandomFruit();
         System.out.println("Я загадал фрукт (не более 15 букв), попробуй отгадать его");
-        System.out.println(word);
 
         Scanner scanner = new Scanner(System.in);
         do {
