@@ -28,6 +28,8 @@ public class Task3_2 {
             String answer = scanner.nextLine();
             answer = answer.substring(0, Math.min(answer.length(), MAX_LENGTH));
 
+            if (answer.equals("")) break;
+
             if (word.equals(answer)) {
                 System.out.println("Вы угадали слово, игра закончена!!!");
                 break;
